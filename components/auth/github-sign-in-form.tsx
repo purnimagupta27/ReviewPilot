@@ -1,16 +1,15 @@
 "use client"
 
-import * as React from "react"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Spinner } from "@/components/ui/spinner"
 import { authClient } from "@/lib/auth-client"
 
-interface GitHubSignInButtonProps {
+interface GitHubSignInFormProps {
   callbackUrl?: string
 }
 
-export function GitHubSignInButton({ callbackUrl }: GitHubSignInButtonProps) {
+export function GitHubSignInForm({ callbackUrl }: GitHubSignInFormProps) {
   const [isLoading, setIsLoading] = useState(false)
 
   const handleSignIn = async () => {
