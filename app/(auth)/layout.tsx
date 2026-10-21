@@ -1,10 +1,12 @@
 import { ModeToggle } from "@/components/ui/mode-toggle"
+import { requireUnauth } from "@/features/auth/actions"
 
-export default function AuthLayout({
+export default async function AuthLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  await requireUnauth()
   return (
     <div className="relative flex min-h-svh flex-1 items-center justify-center overflow-hidden bg-background p-6">
       <div

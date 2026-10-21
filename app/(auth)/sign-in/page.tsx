@@ -16,7 +16,7 @@ import {
   FieldSet,
 } from "@/components/ui/field"
 import { GithubSignInForm } from "@/features/auth/components/github-sign-in-form"
-import { getSafeCallbackPath } from "@/utils"
+import { getSafeCallbackPath } from "@/features/auth/utils"
 
 export const metadata: Metadata = {
   title: "Sign in · ReviewPilot",
